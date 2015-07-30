@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BA2DC3801B60AE7D0011AC7A /* client.key in Resources */ = {isa = PBXBuildFile; fileRef = BA2DC37E1B60AE7D0011AC7A /* client.key */; };
+		BA2DC3831B60BA290011AC7A /* client.crt in Resources */ = {isa = PBXBuildFile; fileRef = BA2DC3821B60BA290011AC7A /* client.crt */; };
+		BA2DC3851B60BA310011AC7A /* ca.crt in Resources */ = {isa = PBXBuildFile; fileRef = BA2DC3841B60BA310011AC7A /* ca.crt */; };
+		BA3181EE1B5BFE3B006E0343 /* MyMessage.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA3181ED1B5BFE3B006E0343 /* MyMessage.xib */; };
+		BA3C2F3F1B5AC0560078A126 /* TopicTalkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3C2F3E1B5AC0560078A126 /* TopicTalkController.swift */; };
+		BA3C2F411B5AC06B0078A126 /* WorldTalkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3C2F401B5AC06B0078A126 /* WorldTalkController.swift */; };
+		BA3C2F431B5ACD520078A126 /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3C2F421B5ACD520078A126 /* NewsCell.swift */; };
+		BA3C2F451B5ADB6A0078A126 /* NewsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA3C2F441B5ADB6A0078A126 /* NewsCell.xib */; };
+		BA3C2F471B5AE4C00078A126 /* TopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA3C2F461B5AE4C00078A126 /* TopicCell.xib */; };
+		BA3C2F491B5AE58B0078A126 /* TopicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3C2F481B5AE58B0078A126 /* TopicCell.swift */; };
+		BA424D171B5E44F3007395A4 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA424D161B5E44F3007395A4 /* EditViewController.swift */; };
+		BAB8F0271B5A6E6100D02F28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB8F0261B5A6E6100D02F28 /* AppDelegate.swift */; };
+		BAB8F0291B5A6E6100D02F28 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB8F0281B5A6E6100D02F28 /* ViewController.swift */; };
+		BAB8F02C1B5A6E6100D02F28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAB8F02A1B5A6E6100D02F28 /* Main.storyboard */; };
+		BAB8F02E1B5A6E6100D02F28 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAB8F02D1B5A6E6100D02F28 /* Images.xcassets */; };
+		BAB8F0311B5A6E6100D02F28 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAB8F02F1B5A6E6100D02F28 /* LaunchScreen.xib */; };
+		BAB8F03D1B5A6E6100D02F28 /* IMTalkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB8F03C1B5A6E6100D02F28 /* IMTalkTests.swift */; };
+		BAB8F0601B5A6E8400D02F28 /* SocketAckManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB8F0471B5A6E8400D02F28 /* SocketAckManager.swift */; };
+		BAB8F0611B5A6E8400D02F28 /* SocketAnyEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB8F0481B5A6E8400D02F28 /* SocketAnyEvent.swift */; };
+		BAB8F0621B5A6E8400D02F28 /* SocketEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB8F0491B5A6E8400D02F28 /* SocketEngine.swift */; };
+		BAB8F0631B5A6E8400D02F28 /* SocketEngineClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB8F04A1B5A6E8400D02F28 /* SocketEngineClient.swift */; };
+		BAB8F0641B5A6E8400D02F28 /* SocketEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB8F04B1B5A6E8400D02F28 /* SocketEventHandler.swift */; };
+		BAB8F0651B5A6E8400D02F28 /* SocketFixUTF8.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB8F04C1B5A6E8400D02F28 /* SocketFixUTF8.swift */; };
+		BAB8F0661B5A6E8400D02F28 /* SocketIOClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB8F04D1B5A6E8400D02F28 /* SocketIOClient.swift */; };
+		BAB8F0671B5A6E8400D02F28 /* SocketLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB8F04E1B5A6E8400D02F28 /* SocketLogger.swift */; };
+		BAB8F0681B5A6E8400D02F28 /* SocketPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB8F04F1B5A6E8400D02F28 /* SocketPacket.swift */; };
+		BAB8F0691B5A6E8400D02F28 /* SocketParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB8F0501B5A6E8400D02F28 /* SocketParser.swift */; };
+		BAB8F06A1B5A6E8400D02F28 /* SocketTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB8F0511B5A6E8400D02F28 /* SocketTypes.swift */; };
+		BAB8F06B1B5A6E8400D02F28 /* SwiftRegex.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB8F0561B5A6E8400D02F28 /* SwiftRegex.swift */; };
+		BAB8F06C1B5A6E8400D02F28 /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB8F0571B5A6E8400D02F28 /* WebSocket.swift */; };
+		BAB8F06D1B5A6E8400D02F28 /* HTTPRequestSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB8F0591B5A6E8400D02F28 /* HTTPRequestSerializer.swift */; };
+		BAB8F06E1B5A6E8400D02F28 /* HTTPResponseSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB8F05A1B5A6E8400D02F28 /* HTTPResponseSerializer.swift */; };
+		BAB8F06F1B5A6E8400D02F28 /* HTTPSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB8F05B1B5A6E8400D02F28 /* HTTPSecurity.swift */; };
+		BAB8F0701B5A6E8400D02F28 /* HTTPStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB8F05C1B5A6E8400D02F28 /* HTTPStatusCode.swift */; };
+		BAB8F0711B5A6E8400D02F28 /* HTTPTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB8F05D1B5A6E8400D02F28 /* HTTPTask.swift */; };
+		BAB8F0721B5A6E8400D02F28 /* HTTPUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB8F05E1B5A6E8400D02F28 /* HTTPUpload.swift */; };
+		BAC7B16B1B5B6CC000F310C3 /* SigninController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC7B16A1B5B6CC000F310C3 /* SigninController.swift */; };
+		BAC7B16D1B5B934000F310C3 /* TalkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC7B16C1B5B934000F310C3 /* TalkViewController.swift */; };
+		BAD3A5A81B5F603C00350549 /* news.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BAD3A5A71B5F603C00350549 /* news.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BAB8F0371B5A6E6100D02F28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BAB8F0191B5A6E6100D02F28 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BAB8F0201B5A6E6100D02F28;
+			remoteInfo = IMTalk;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BA2DC37E1B60AE7D0011AC7A /* client.key */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = client.key; sourceTree = "<group>"; };
+		BA2DC3821B60BA290011AC7A /* client.crt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = client.crt; sourceTree = "<group>"; };
+		BA2DC3841B60BA310011AC7A /* ca.crt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ca.crt; sourceTree = "<group>"; };
+		BA3181ED1B5BFE3B006E0343 /* MyMessage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyMessage.xib; sourceTree = "<group>"; };
+		BA3C2F3E1B5AC0560078A126 /* TopicTalkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicTalkController.swift; sourceTree = "<group>"; };
+		BA3C2F401B5AC06B0078A126 /* WorldTalkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorldTalkController.swift; sourceTree = "<group>"; };
+		BA3C2F421B5ACD520078A126 /* NewsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
+		BA3C2F441B5ADB6A0078A126 /* NewsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsCell.xib; sourceTree = "<group>"; };
+		BA3C2F461B5AE4C00078A126 /* TopicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopicCell.xib; sourceTree = "<group>"; };
+		BA3C2F481B5AE58B0078A126 /* TopicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TopicCell.swift; path = ../TopicCell.swift; sourceTree = "<group>"; };
+		BA424D161B5E44F3007395A4 /* EditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
+		BAB8F0211B5A6E6100D02F28 /* IMTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IMTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAB8F0251B5A6E6100D02F28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAB8F0261B5A6E6100D02F28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BAB8F0281B5A6E6100D02F28 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BAB8F02B1B5A6E6100D02F28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BAB8F02D1B5A6E6100D02F28 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BAB8F0301B5A6E6100D02F28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		BAB8F0361B5A6E6100D02F28 /* IMTalkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IMTalkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAB8F03B1B5A6E6100D02F28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAB8F03C1B5A6E6100D02F28 /* IMTalkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMTalkTests.swift; sourceTree = "<group>"; };
+		BAB8F0471B5A6E8400D02F28 /* SocketAckManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketAckManager.swift; sourceTree = "<group>"; };
+		BAB8F0481B5A6E8400D02F28 /* SocketAnyEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketAnyEvent.swift; sourceTree = "<group>"; };
+		BAB8F0491B5A6E8400D02F28 /* SocketEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketEngine.swift; sourceTree = "<group>"; };
+		BAB8F04A1B5A6E8400D02F28 /* SocketEngineClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketEngineClient.swift; sourceTree = "<group>"; };
+		BAB8F04B1B5A6E8400D02F28 /* SocketEventHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketEventHandler.swift; sourceTree = "<group>"; };
+		BAB8F04C1B5A6E8400D02F28 /* SocketFixUTF8.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketFixUTF8.swift; sourceTree = "<group>"; };
+		BAB8F04D1B5A6E8400D02F28 /* SocketIOClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketIOClient.swift; sourceTree = "<group>"; };
+		BAB8F04E1B5A6E8400D02F28 /* SocketLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketLogger.swift; sourceTree = "<group>"; };
+		BAB8F04F1B5A6E8400D02F28 /* SocketPacket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketPacket.swift; sourceTree = "<group>"; };
+		BAB8F0501B5A6E8400D02F28 /* SocketParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketParser.swift; sourceTree = "<group>"; };
+		BAB8F0511B5A6E8400D02F28 /* SocketTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketTypes.swift; sourceTree = "<group>"; };
+		BAB8F0561B5A6E8400D02F28 /* SwiftRegex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftRegex.swift; sourceTree = "<group>"; };
+		BAB8F0571B5A6E8400D02F28 /* WebSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSocket.swift; sourceTree = "<group>"; };
+		BAB8F0591B5A6E8400D02F28 /* HTTPRequestSerializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPRequestSerializer.swift; sourceTree = "<group>"; };
+		BAB8F05A1B5A6E8400D02F28 /* HTTPResponseSerializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPResponseSerializer.swift; sourceTree = "<group>"; };
+		BAB8F05B1B5A6E8400D02F28 /* HTTPSecurity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPSecurity.swift; sourceTree = "<group>"; };
+		BAB8F05C1B5A6E8400D02F28 /* HTTPStatusCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPStatusCode.swift; sourceTree = "<group>"; };
+		BAB8F05D1B5A6E8400D02F28 /* HTTPTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPTask.swift; sourceTree = "<group>"; };
+		BAB8F05E1B5A6E8400D02F28 /* HTTPUpload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPUpload.swift; sourceTree = "<group>"; };
+		BAB8F05F1B5A6E8400D02F28 /* SwiftHTTP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftHTTP.h; sourceTree = "<group>"; };
+		BAC7B16A1B5B6CC000F310C3 /* SigninController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SigninController.swift; sourceTree = "<group>"; };
+		BAC7B16C1B5B934000F310C3 /* TalkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TalkViewController.swift; sourceTree = "<group>"; };
+		BAD3A5A71B5F603C00350549 /* news.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = news.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BAB8F01E1B5A6E6100D02F28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAB8F0331B5A6E6100D02F28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BA2DC37D1B60AE540011AC7A /* Keys */ = {
+			isa = PBXGroup;
+			children = (
+				BA2DC3841B60BA310011AC7A /* ca.crt */,
+				BA2DC3821B60BA290011AC7A /* client.crt */,
+				BA2DC37E1B60AE7D0011AC7A /* client.key */,
+			);
+			name = Keys;
+			sourceTree = "<group>";
+		};
+		BAB8F0181B5A6E6100D02F28 = {
+			isa = PBXGroup;
+			children = (
+				BAB8F0231B5A6E6100D02F28 /* IMTalk */,
+				BAB8F0391B5A6E6100D02F28 /* IMTalkTests */,
+				BAB8F0221B5A6E6100D02F28 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BAB8F0221B5A6E6100D02F28 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BAB8F0211B5A6E6100D02F28 /* IMTalk.app */,
+				BAB8F0361B5A6E6100D02F28 /* IMTalkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BAB8F0231B5A6E6100D02F28 /* IMTalk */ = {
+			isa = PBXGroup;
+			children = (
+				BA2DC37D1B60AE540011AC7A /* Keys */,
+				BAD3A5A61B5F428D00350549 /* Image */,
+				BAB8F0461B5A6E8400D02F28 /* SocketIOClientSwift */,
+				BAB8F0581B5A6E8400D02F28 /* SwiftHTTP */,
+				BAB8F0261B5A6E6100D02F28 /* AppDelegate.swift */,
+				BAB8F0281B5A6E6100D02F28 /* ViewController.swift */,
+				BAC7B16C1B5B934000F310C3 /* TalkViewController.swift */,
+				BA3C2F3E1B5AC0560078A126 /* TopicTalkController.swift */,
+				BA3C2F401B5AC06B0078A126 /* WorldTalkController.swift */,
+				BA424D161B5E44F3007395A4 /* EditViewController.swift */,
+				BAC7B16A1B5B6CC000F310C3 /* SigninController.swift */,
+				BA3C2F421B5ACD520078A126 /* NewsCell.swift */,
+				BA3C2F441B5ADB6A0078A126 /* NewsCell.xib */,
+				BA3C2F481B5AE58B0078A126 /* TopicCell.swift */,
+				BA3C2F461B5AE4C00078A126 /* TopicCell.xib */,
+				BA3181ED1B5BFE3B006E0343 /* MyMessage.xib */,
+				BAB8F02A1B5A6E6100D02F28 /* Main.storyboard */,
+				BAB8F02F1B5A6E6100D02F28 /* LaunchScreen.xib */,
+				BAB8F02D1B5A6E6100D02F28 /* Images.xcassets */,
+				BAB8F0241B5A6E6100D02F28 /* Supporting Files */,
+			);
+			path = IMTalk;
+			sourceTree = "<group>";
+		};
+		BAB8F0241B5A6E6100D02F28 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BAB8F0251B5A6E6100D02F28 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BAB8F0391B5A6E6100D02F28 /* IMTalkTests */ = {
+			isa = PBXGroup;
+			children = (
+				BAB8F03C1B5A6E6100D02F28 /* IMTalkTests.swift */,
+				BAB8F03A1B5A6E6100D02F28 /* Supporting Files */,
+			);
+			path = IMTalkTests;
+			sourceTree = "<group>";
+		};
+		BAB8F03A1B5A6E6100D02F28 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BAB8F03B1B5A6E6100D02F28 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BAB8F0461B5A6E8400D02F28 /* SocketIOClientSwift */ = {
+			isa = PBXGroup;
+			children = (
+				BAB8F0471B5A6E8400D02F28 /* SocketAckManager.swift */,
+				BAB8F0481B5A6E8400D02F28 /* SocketAnyEvent.swift */,
+				BAB8F0491B5A6E8400D02F28 /* SocketEngine.swift */,
+				BAB8F04A1B5A6E8400D02F28 /* SocketEngineClient.swift */,
+				BAB8F04B1B5A6E8400D02F28 /* SocketEventHandler.swift */,
+				BAB8F04C1B5A6E8400D02F28 /* SocketFixUTF8.swift */,
+				BAB8F04D1B5A6E8400D02F28 /* SocketIOClient.swift */,
+				BAB8F04E1B5A6E8400D02F28 /* SocketLogger.swift */,
+				BAB8F04F1B5A6E8400D02F28 /* SocketPacket.swift */,
+				BAB8F0501B5A6E8400D02F28 /* SocketParser.swift */,
+				BAB8F0511B5A6E8400D02F28 /* SocketTypes.swift */,
+				BAB8F0561B5A6E8400D02F28 /* SwiftRegex.swift */,
+				BAB8F0571B5A6E8400D02F28 /* WebSocket.swift */,
+			);
+			path = SocketIOClientSwift;
+			sourceTree = "<group>";
+		};
+		BAB8F0581B5A6E8400D02F28 /* SwiftHTTP */ = {
+			isa = PBXGroup;
+			children = (
+				BAB8F0591B5A6E8400D02F28 /* HTTPRequestSerializer.swift */,
+				BAB8F05A1B5A6E8400D02F28 /* HTTPResponseSerializer.swift */,
+				BAB8F05B1B5A6E8400D02F28 /* HTTPSecurity.swift */,
+				BAB8F05C1B5A6E8400D02F28 /* HTTPStatusCode.swift */,
+				BAB8F05D1B5A6E8400D02F28 /* HTTPTask.swift */,
+				BAB8F05E1B5A6E8400D02F28 /* HTTPUpload.swift */,
+				BAB8F05F1B5A6E8400D02F28 /* SwiftHTTP.h */,
+			);
+			path = SwiftHTTP;
+			sourceTree = "<group>";
+		};
+		BAD3A5A61B5F428D00350549 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				BAD3A5A71B5F603C00350549 /* news.jpg */,
+			);
+			name = Image;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BAB8F0201B5A6E6100D02F28 /* IMTalk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAB8F0401B5A6E6100D02F28 /* Build configuration list for PBXNativeTarget "IMTalk" */;
+			buildPhases = (
+				BAB8F01D1B5A6E6100D02F28 /* Sources */,
+				BAB8F01E1B5A6E6100D02F28 /* Frameworks */,
+				BAB8F01F1B5A6E6100D02F28 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IMTalk;
+			productName = IMTalk;
+			productReference = BAB8F0211B5A6E6100D02F28 /* IMTalk.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BAB8F0351B5A6E6100D02F28 /* IMTalkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAB8F0431B5A6E6100D02F28 /* Build configuration list for PBXNativeTarget "IMTalkTests" */;
+			buildPhases = (
+				BAB8F0321B5A6E6100D02F28 /* Sources */,
+				BAB8F0331B5A6E6100D02F28 /* Frameworks */,
+				BAB8F0341B5A6E6100D02F28 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BAB8F0381B5A6E6100D02F28 /* PBXTargetDependency */,
+			);
+			name = IMTalkTests;
+			productName = IMTalkTests;
+			productReference = BAB8F0361B5A6E6100D02F28 /* IMTalkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BAB8F0191B5A6E6100D02F28 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "文诗棋";
+				TargetAttributes = {
+					BAB8F0201B5A6E6100D02F28 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					BAB8F0351B5A6E6100D02F28 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = BAB8F0201B5A6E6100D02F28;
+					};
+				};
+			};
+			buildConfigurationList = BAB8F01C1B5A6E6100D02F28 /* Build configuration list for PBXProject "IMTalk" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BAB8F0181B5A6E6100D02F28;
+			productRefGroup = BAB8F0221B5A6E6100D02F28 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BAB8F0201B5A6E6100D02F28 /* IMTalk */,
+				BAB8F0351B5A6E6100D02F28 /* IMTalkTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BAB8F01F1B5A6E6100D02F28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA2DC3801B60AE7D0011AC7A /* client.key in Resources */,
+				BA3C2F471B5AE4C00078A126 /* TopicCell.xib in Resources */,
+				BAB8F02C1B5A6E6100D02F28 /* Main.storyboard in Resources */,
+				BA2DC3831B60BA290011AC7A /* client.crt in Resources */,
+				BAB8F0311B5A6E6100D02F28 /* LaunchScreen.xib in Resources */,
+				BA2DC3851B60BA310011AC7A /* ca.crt in Resources */,
+				BA3181EE1B5BFE3B006E0343 /* MyMessage.xib in Resources */,
+				BAD3A5A81B5F603C00350549 /* news.jpg in Resources */,
+				BAB8F02E1B5A6E6100D02F28 /* Images.xcassets in Resources */,
+				BA3C2F451B5ADB6A0078A126 /* NewsCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAB8F0341B5A6E6100D02F28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BAB8F01D1B5A6E6100D02F28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAB8F0661B5A6E8400D02F28 /* SocketIOClient.swift in Sources */,
+				BAB8F0601B5A6E8400D02F28 /* SocketAckManager.swift in Sources */,
+				BAB8F0631B5A6E8400D02F28 /* SocketEngineClient.swift in Sources */,
+				BA3C2F3F1B5AC0560078A126 /* TopicTalkController.swift in Sources */,
+				BA3C2F491B5AE58B0078A126 /* TopicCell.swift in Sources */,
+				BAB8F06B1B5A6E8400D02F28 /* SwiftRegex.swift in Sources */,
+				BAB8F06C1B5A6E8400D02F28 /* WebSocket.swift in Sources */,
+				BAB8F0621B5A6E8400D02F28 /* SocketEngine.swift in Sources */,
+				BAB8F0291B5A6E6100D02F28 /* ViewController.swift in Sources */,
+				BAB8F0681B5A6E8400D02F28 /* SocketPacket.swift in Sources */,
+				BAB8F0641B5A6E8400D02F28 /* SocketEventHandler.swift in Sources */,
+				BA3C2F411B5AC06B0078A126 /* WorldTalkController.swift in Sources */,
+				BAB8F06D1B5A6E8400D02F28 /* HTTPRequestSerializer.swift in Sources */,
+				BAB8F0671B5A6E8400D02F28 /* SocketLogger.swift in Sources */,
+				BAB8F0651B5A6E8400D02F28 /* SocketFixUTF8.swift in Sources */,
+				BAB8F06A1B5A6E8400D02F28 /* SocketTypes.swift in Sources */,
+				BAC7B16D1B5B934000F310C3 /* TalkViewController.swift in Sources */,
+				BAB8F06F1B5A6E8400D02F28 /* HTTPSecurity.swift in Sources */,
+				BAB8F0611B5A6E8400D02F28 /* SocketAnyEvent.swift in Sources */,
+				BAB8F0271B5A6E6100D02F28 /* AppDelegate.swift in Sources */,
+				BA424D171B5E44F3007395A4 /* EditViewController.swift in Sources */,
+				BAB8F0721B5A6E8400D02F28 /* HTTPUpload.swift in Sources */,
+				BA3C2F431B5ACD520078A126 /* NewsCell.swift in Sources */,
+				BAC7B16B1B5B6CC000F310C3 /* SigninController.swift in Sources */,
+				BAB8F0711B5A6E8400D02F28 /* HTTPTask.swift in Sources */,
+				BAB8F0691B5A6E8400D02F28 /* SocketParser.swift in Sources */,
+				BAB8F0701B5A6E8400D02F28 /* HTTPStatusCode.swift in Sources */,
+				BAB8F06E1B5A6E8400D02F28 /* HTTPResponseSerializer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAB8F0321B5A6E6100D02F28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAB8F03D1B5A6E6100D02F28 /* IMTalkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BAB8F0381B5A6E6100D02F28 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BAB8F0201B5A6E6100D02F28 /* IMTalk */;
+			targetProxy = BAB8F0371B5A6E6100D02F28 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BAB8F02A1B5A6E6100D02F28 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BAB8F02B1B5A6E6100D02F28 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BAB8F02F1B5A6E6100D02F28 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BAB8F0301B5A6E6100D02F28 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BAB8F03E1B5A6E6100D02F28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BAB8F03F1B5A6E6100D02F28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BAB8F0411B5A6E6100D02F28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = IMTalk/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BAB8F0421B5A6E6100D02F28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = IMTalk/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BAB8F0441B5A6E6100D02F28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = IMTalkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IMTalk.app/IMTalk";
+			};
+			name = Debug;
+		};
+		BAB8F0451B5A6E6100D02F28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = IMTalkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IMTalk.app/IMTalk";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BAB8F01C1B5A6E6100D02F28 /* Build configuration list for PBXProject "IMTalk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAB8F03E1B5A6E6100D02F28 /* Debug */,
+				BAB8F03F1B5A6E6100D02F28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAB8F0401B5A6E6100D02F28 /* Build configuration list for PBXNativeTarget "IMTalk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAB8F0411B5A6E6100D02F28 /* Debug */,
+				BAB8F0421B5A6E6100D02F28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAB8F0431B5A6E6100D02F28 /* Build configuration list for PBXNativeTarget "IMTalkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAB8F0441B5A6E6100D02F28 /* Debug */,
+				BAB8F0451B5A6E6100D02F28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BAB8F0191B5A6E6100D02F28 /* Project object */;
+}
